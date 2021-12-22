@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Example.ApplicationCore.Functions.Posts.Events
 {
-    public class PostCreatedEventHandler :
+    internal class PostCreatedEventHandler :
         IEventHandler<PostCreatedEvent>
     {
         private ICommandHandler<SendToGrammarCheckerCommand> 
